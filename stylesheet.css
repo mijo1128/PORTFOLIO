@@ -1,4 +1,4 @@
-*{ margin: 0; padding: 0; box-sizing: border-box; font-family: 'poppins', sans-serif; outline: 1px dashed yellow;}
+*{ margin: 0; padding: 0; box-sizing: border-box; font-family: 'poppins', sans-serif;}
 .header{ 
     width: 100%; 
     background-image: linear-gradient(rgba(0, 0, 0, 0.7),transparent),url(images/night.jpg);
@@ -183,6 +183,7 @@ nav{
 
 .project-col img{
         width: auto;
+        height: auto;
         border-radius: 10px;}
 
 .project-col p{
@@ -222,13 +223,13 @@ a:link {
     padding: 0px 0px 100px 0px;
 }
 
-.contact-icon {
+.contact-icon { 
     color: white;
     text-align: center;
     padding: 10px;
 }
 
-
+    
 @media(max-width: 1379px){
     .container {
         display: flex;
@@ -255,16 +256,52 @@ a:link {
 }
  
 @media(max-width: 800px) {
+
+    .Luis {
+        padding: -500px 0px 0px 0px;
+        font-size: 8px}
+
     .box {
         width: 120px;
         height: auto;
         flex-direction: column;
     }
+
+    .proj-icon {
+        width: 200px;
+    }
 }
 
-@media(max-width7: 600px) {
+@media(max-width: 630px) {
+    .Luis {
+        padding: -500px 0px 0px 0px;
+        font-size: 6px}
+
     .box {
-        width: 100px;
+        width: 80px;
+        height: auto;}
+
+    .proj-col img {
+        width: 5px;
+        height: 5px;
+    }
+}
+
+@media(max-width: 400px) {
+    .Luis {
+        padding: -500px 0px 0px 0px;
+        font-size: 4px}
+
+    .box {
+        width: 80px;
         height: auto;
+    }
+
+    .project-col {
+        width: 10px;
+        height: auto;
+    }
+    .proj-icon {
+        width: 10px;
     }
 }
