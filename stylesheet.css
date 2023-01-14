@@ -1,0 +1,270 @@
+*{ margin: 0; padding: 0; box-sizing: border-box; font-family: 'poppins', sans-serif; outline: 1px dashed yellow;}
+.header{ 
+    width: 100%; 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),transparent),url(images/night.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 0 8%;
+    position: relative;
+    
+
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 30px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.7em;
+    position: relative;
+    transition: all .5s ease;
+    padding: 10px;
+}
+
+.nav-links ul li a:hover{
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    box-shadow: 0 0 30px #B49085;
+}
+
+
+
+.Luis {
+    color: white;
+    text-align: center;
+    padding: 200px 0px 0px 0px;
+}
+.Luis h1 {
+    font-size: 13em;
+    color: transparent;
+    -webkit-text-stroke: 2px white;
+    -webkit-background-clip: text;
+    background-clip: text;
+    justify-content: center;
+}
+
+
+.Luis h3 {
+    font-size: 3em;
+    font-weight: 200;
+
+}
+
+.about{ 
+    background-color:#1b1416;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* -------------About Me ----------------- */
+
+#about {
+    /* height: 70vh; */
+    background-color: rgb(2,2,2);
+    padding: 20px 0;
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+.row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about-column2 {
+    flex-basis: 50%;
+
+}
+.about-column2 p {
+    line-height: 2em;
+    color: white;
+    padding: 0 100px;
+}
+
+.about-title {
+    font-size: 60px;
+    font-weight: 700;
+    padding: 0 100px;
+}
+/*------------------ languages ------------*/
+
+.skills {
+    background-color: rgb(1,1,1);
+}
+.skills h1 {
+    display: flex;
+    font-size: 50px;
+    padding: 30px 0;
+    color: white;
+    justify-content: center;
+}
+.skills-text {
+    padding: 0 0 100px 0 ;
+    display: flex;
+    color: white;
+    font-size: 25px;
+    font-weight:200;
+    justify-content: center;
+
+}
+.languages{
+    width: 100%;
+    /* height: auto; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0px 0px 100px 0px;
+}
+
+.box{
+    border-radius: 5px;
+    border: 2px solid rgb(59, 59, 59);
+    padding: 20px;
+    align-items: center;
+
+}
+
+.icon {
+    color: white;
+    text-align: center;
+    padding: 0px 0px 30px 0px;
+}
+.row2 {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 100px 0px;
+}
+
+.projects {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+.projects h1{
+    color: white;
+    text-align: center;
+    font-size:50px;
+    padding: 100px 0 0 0;
+
+}
+.project-col {
+    flex-basis: 31%;
+    background-color: rgba(255, 255, 255, 0.905);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: center;}
+
+.project-col img{
+        width: auto;
+        border-radius: 10px;}
+
+.project-col p{
+    padding: 20px;
+    line-height: 1.5em;
+
+}
+
+
+.project-col:hover{
+    box-shadow: 0 0 40px 0px rgba(255, 254, 221, 0.751);}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+a:link {
+    text-decoration: none;
+}
+.contact {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.contact h1 {
+    display: flex;
+    font-size: 50px;
+    padding: 30px 0;
+    color: white;
+    justify-content: center;}
+
+.contact-icons {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0px 0px 100px 0px;
+}
+
+.contact-icon {
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+@media(max-width: 1379px){
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-column2  {
+        min-width: 90%;
+    }
+    .about-column2 h1 {
+        font-size: 30px;
+    }
+    .header{
+        flex-flow:column;
+    }
+    .Luis {
+        padding: -500px 0px 0px 0px;
+        font-size: 12px
+
+    }
+    .box {
+        flex-direction: column;
+    }
+}
+ 
+@media(max-width: 800px) {
+    .box {
+        width: 120px;
+        height: auto;
+        flex-direction: column;
+    }
+}
+
+@media(max-width7: 600px) {
+    .box {
+        width: 100px;
+        height: auto;
+    }
+}
