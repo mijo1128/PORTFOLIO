@@ -1,7 +1,7 @@
 *{ margin: 0; padding: 0; box-sizing: border-box; font-family: 'poppins', sans-serif;}
 .header{ 
     width: 100%; 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),transparent),url(images/night.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9),transparent),url(images/night3.jpg);
     background-size: cover;
     background-position: center;
     padding: 0 8%;
@@ -21,7 +21,7 @@ nav{
 
 .nav-links {
     flex: 1;
-    text-align: right;
+    text-align: center;
 }
 
 .nav-links ul li{
@@ -35,7 +35,7 @@ nav{
     border-radius: 10px;
     color: white;
     text-decoration: none;
-    font-size: 1.7em;
+    font-size: 2em;
     position: relative;
     transition: all .5s ease;
     padding: 10px;
@@ -52,7 +52,7 @@ nav{
 .Luis {
     color: white;
     text-align: center;
-    padding: 200px 0px 0px 0px;
+    padding: 200px 0px 250px 0px;
 }
 .Luis h1 {
     font-size: 13em;
@@ -74,6 +74,7 @@ nav{
     background-color:#1b1416;
     display: flex;
     justify-content: center;
+
 }
 
 
@@ -84,6 +85,7 @@ nav{
     background-color: rgb(2,2,2);
     padding: 20px 0;
     color: white;
+    font-size: 1.6em;
 }
 
 .container {
@@ -231,6 +233,14 @@ a:link {
 
     
 @media(max-width: 1379px){
+    .nav-links ul li{
+        font-size: .8em;
+        list-style: none;
+        display: inline-block;
+        padding: 8px 10px;
+        position: relative;
+    }
+
     .container {
         display: flex;
         flex-direction: column;
@@ -240,7 +250,9 @@ a:link {
         min-width: 90%;
     }
     .about-column2 h1 {
-        font-size: 30px;
+        font-size: 40px;
+        text-align: center;
+        padding: 10px;
     }
     .header{
         flex-flow:column;
@@ -250,6 +262,61 @@ a:link {
         font-size: 12px
 
     }
+
+    .Luis h1 {
+        font-size: 15em;
+    }
+
+    .Luis h3 {
+        font-size: 5em;
+        padding: 10px;
+    }
+
+    .box {
+        flex-direction: column;
+    }
+}
+ 
+@media(max-width: 990px){
+    .nav-links ul li{
+        font-size: .8em;
+        list-style: none;
+        display: inline-block;
+        padding: 8px 10px;
+        position: relative;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-column2  {
+        min-width: 90%;
+    }
+    .about-column2 h1 {
+        font-size: 40px;
+        text-align: center;
+        padding: 10px;
+    }
+    .header{
+        flex-flow:column;
+    }
+    .Luis {
+        padding: -500px 0px 0px 0px;
+        font-size: 12px
+
+    }
+
+    .Luis h1 {
+        font-size: 12em;
+    }
+
+    .Luis h3 {
+        font-size: 4em;
+        padding: 50px;
+    }
+
     .box {
         flex-direction: column;
     }
@@ -257,9 +324,25 @@ a:link {
  
 @media(max-width: 800px) {
 
+    .nav-links ul li{
+        font-size: .5em;
+        list-style: none;
+        display: inline-block;
+        padding: 8px 10px;
+        position: relative;
+    }
+
     .Luis {
-        padding: -500px 0px 0px 0px;
-        font-size: 8px}
+        padding: 50px 0px 50px 0px;
+        font-size: 4px}
+    .Luis h1 {
+        font-size: 20em;
+    }
+
+    .Luis h3 {
+        font-size: 5em;
+        padding: 10px;
+    }
 
     .box {
         width: 120px;
@@ -273,35 +356,121 @@ a:link {
 }
 
 @media(max-width: 630px) {
-    .Luis {
-        padding: -500px 0px 0px 0px;
-        font-size: 6px}
+
+    .nav-links {
+        flex: 1;
+        text-align: center;
+    }
+    
+    .nav-links ul li{
+        font-size: 1em;
+        list-style: none;
+        display: inline-block;
+        padding: 8px 0px;
+        position: relative;
+    }
+    
+    .nav-links ul li a {
+        border-radius: 10px;
+        color: white;
+        text-decoration: none;
+        font-size: 1em;
+        position: relative;
+        transition: all .5s ease;
+        padding: 10px; }
+
+        .Luis {
+            padding: 50px 0px 50px 0px;
+            font-size: 4px}
+        .Luis h1 {
+            font-size: 15em;
+        }
+    
+        .Luis h3 {
+            font-size: 5em;
+            padding: 10px;
+        }
 
     .box {
         width: 80px;
         height: auto;}
 
-    .proj-col img {
-        width: 5px;
-        height: 5px;
+    .project-col {
+        width: 300px;
+        font-size: .7em;
     }
+
+    .project-col img {
+        
+        width: 150px;
+        height: 150px;
+        padding: 5px;
+    }
+
+
 }
 
-@media(max-width: 400px) {
+@media(max-width: 420px) {
+
+    .nav-links {
+        display: none;
+    }
+
     .Luis {
-        padding: -500px 0px 0px 0px;
+        padding: 50px 0px 50px 0px;
         font-size: 4px}
+    .Luis h1 {
+        font-size: 15em;
+    }
+
+    .Luis h3 {
+        font-size: 5em;
+        padding: 10px;
+    }
+
+    #me {
+        height: 180px;
+    }
+
+    .about-column2 p {
+        font-size: .6em;
+        padding: 5px;
+        line-height: 1.5em;
+    }
+
+    .skills-text {
+        font-size: 1em;
+        text-align: center;
+        padding: 0px 10px 30px 10px;
+    }
 
     .box {
         width: 80px;
         height: auto;
     }
 
+    .project-col img {
+        
+        width: 150px;
+        height: 150px;
+    }
+
+
     .project-col {
-        width: 10px;
+        width: 100%;
         height: auto;
     }
     .proj-icon {
         width: 10px;
+    }
+
+    .contact-icons {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 0px 0px 100px 0px;
     }
 }
